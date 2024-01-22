@@ -8,8 +8,8 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
-// import axios form 'axios';
-import {store} from './store.js'
+import {store} from './store.js' // import axios form 'axios';
+import axios from 'axios'; // importo elemento axios
 
 export default {
     data(){
@@ -24,6 +24,11 @@ export default {
     },
     methods: {
 
+    },  
+    mounted(){ //montarlo
+    axios.get('https://rickandmortyapi.com/api/character?page=1').then((response) => {
+        console.log(response);
+    });
     }
 }
 
