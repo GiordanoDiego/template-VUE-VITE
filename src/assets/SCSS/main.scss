@@ -1,0 +1,13 @@
+@use './partials/variables.scss' as *;
+@use './partials/mixins.scss' as *;
+//import bootstrapp
+@import "bootstrap/scss/bootstrap";
+
+/*RESET*/
+
+.my_container{
+    width: 1100px;
+    margin: 0 auto;
+    border: 1px dashed red
+}
+
